@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h1 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 17px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #121417;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  color: #959eac;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  position: absolute;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  min-width: 327px;
+  max-width: 412px;
+  margin: auto;
+  padding: 24px 24px 32px 24px;
+  border-radius: 15px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container .rating-state .header {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #252d37;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+.container .rating-state .main p {
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.container .rating-state .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.container .rating-state .rating li {
+  font-size: 14px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.container .rating-state .rating li:hover {
+  background-color: #959eac;
+  color: white;
+}
+
+.container .rating-state .rating input[type='radio'] {
+  display: none;
+}
+
+.container .rating-state .rating input[type='radio']:checked + .rating-label {
+  background-color: #fb7413;
+  color: white;
+}
+
+.container .rating-state .rating-label {
+  background-color: #252d37;
+  color: #959eac;
+  font-size: 14px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 45px;
+  cursor: pointer;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.container .rating-state .rating-label:hover {
+  background-color: #959eac;
+  color: white;
+}
+
+.container .rating-state .submit {
+  background-color: #fb7413;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.87px;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 109px;
+  cursor: pointer;
+}
+
+.container .rating-state .submit:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.container .thank-you-state .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .thank-you-state .result {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.container .thank-you-state .result span {
+  background-color: #252d37;
+  color: #fb7413;
+  margin: 24px auto;
+  padding: 8px 12px 5px;
+  border-radius: 50px;
+}
+
+.container .thank-you-state h1 {
+  text-align: center;
+}
+
+.container .thank-you-state p {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

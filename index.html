@@ -5,45 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <div class="container">
 
-  How did we do?
+    <!-- Rating state start -->
+    <div class="rating-state" id="ratingState">
+      <div class="header">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <div class="main">
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="rating">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <input type="radio" value="1" name="rating" id="rating1">
+        <label class="rating-label" for="rating1">1</label>
 
-  1 2 3 4 5
+        <input type="radio" value="2" name="rating" id="rating2">
+        <label class="rating-label" for="rating2">2</label>
 
-  Submit
+        <input type="radio" value="3" name="rating" id="rating3">
+        <label class="rating-label" for="rating3">3</label>
 
-  <!-- Rating state end -->
+        <input type="radio" value="4" name="rating" id="rating4">
+        <label class="rating-label" for="rating4">4</label>
 
-  <!-- Thank you state start -->
+        <input type="radio" value="5" name="rating" id="rating5">
+        <label class="rating-label" for="rating5">5</label>
 
-  You selected <!-- Add rating here --> out of 5
+      </div>
+      <button class="submit" type="submit" id="submit" onclick="submitRating()">Submit</button>
+    </div>
+    <!-- Rating state end -->
 
-  Thank you!
+    <!-- Thank you state start -->
+    <div class="thank-you-state hidden" id="thankYouState">
+      <div class="image">
+        <img src="/images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="result">
+        <span id="rate"></span>
+      </div>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don't hesitate to get in touch!
+      </p>
+    <!-- Thank you state end -->
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+    </div>
 
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
